@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    padding:40px;
+    font-family:Arial, sans-serif;
+    background-color:#f2f6ff;
+}
+
+h1{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:40px;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background-color:white;
+    padding:40px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+
+@media(max-width:768px){
+
+.grid-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:500px){
+
+.grid-container{
+    grid-template-columns:1fr;
+}
+
+}
